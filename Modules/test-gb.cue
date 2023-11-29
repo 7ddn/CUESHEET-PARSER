@@ -1,0 +1,22 @@
+REM DISCID 1B025403
+REM COMMENT "ExactAudioCopy v1.6"
+PERFORMER "未知艺术家"
+TITLE "未知标题"
+REM COMPOSER ""
+FILE "未知艺术家 - 未知标题.flac" WAVE
+  TRACK 01 AUDIO
+    TITLE "音轨01"
+    PERFORMER "未知艺术家"
+    REM COMPOSER ""
+    INDEX 01 00:00:00
+  TRACK 02 AUDIO
+    TITLE "音轨02"
+    PERFORMER "未知艺术家"
+    REM COMPOSER ""
+    INDEX 01 05:00:55
+  TRACK 03 AUDIO
+    TITLE "音轨03"
+    PERFORMER "未知艺术家"
+    REM COMPOSER ""
+    INDEX 01 06:36:26
+
