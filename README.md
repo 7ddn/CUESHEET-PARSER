@@ -16,4 +16,4 @@
 id (space or tab) performer - track name
 ~~~
 - If there is any - in the track name it should not matter but if someone have a - in his/her name or their band name then the programme just f**k off and take anything after the first - as the track name
-- Would provide some example and try to support some other format of content later (if I'm not too lazy to do), and I don't think there would be anyone other than myself using this script.
+- Would provide some example and try to support some other format of content later (if I'm not too lazy to do), though I don't think there would be anyone other than myself using this script.
