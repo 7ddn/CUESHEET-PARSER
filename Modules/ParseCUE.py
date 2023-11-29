@@ -16,7 +16,12 @@ def split_cue_to_dict(splitted):
         title = ' '.join(items[:-1]) if len(items) > 2 else items[0]
         temp[title] = content
 
-    temp['FILE'] = ' '.join(split(splitted[idx])[1:])
+
+    file_info = ' '.join(split(splitted[idx])[1:]).rsplit(' ', 1)
+    title = file_info[0].rsplit('.', 1)[0]
+    audio_format = file_info[0].rsplit('.' ,1)[-1]
+    audio_kind = file_info[-1]
+    temp['FILE'] = {'title':title, 'format':audio_format, 'kind':audio_kind}
     idx += 1
     tracks = []
     while idx < len(splitted):
@@ -29,7 +34,7 @@ def split_cue_to_dict(splitted):
         for i in range(3):
             line = splitted[idx + i]
             items = split(line)
-            value = f'\"{items[-1]}\"'
+            value = f'{items[-1]}'
             title = ' '.join(items[:-1]) if len(items) > 2 else items[0]
             track[title] = value
         idx += 3

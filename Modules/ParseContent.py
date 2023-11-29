@@ -20,8 +20,8 @@ def parse(filepath=None, rawdata=None, composer_first = True):
     for track_info in splitted:
         track_info = re.split('[ \t]', track_info, maxsplit = 1)[-1]
         infos = track_info.split('-')
-        track = {'PERFORMER': infos[0] if composer_first else infos[1],
-                 'TITLE': infos[1] if composer_first else infos[0]}
+        track = {'PERFORMER': infos[0].strip() if composer_first else infos[1].strip(),
+                 'TITLE': infos[1].strip() if composer_first else infos[0].strip()}
         tracks.append(track)
     content['tracks'] = tracks
     return content
